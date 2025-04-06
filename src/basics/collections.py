@@ -59,3 +59,15 @@ print(charMap.items())
 print(charMap.keys())
 print(charMap.values())
 
+
+#heap functions
+print("heapify")
+list111 = [1,4,4,2,2,7,6,]
+heapq.heapify(list111)
+print(list111)
+
+print(heapq.heappop(list111))
+print(heapq.heappop(list111))
+print(heapq.heappop(list111))
+
+
