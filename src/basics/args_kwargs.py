@@ -32,3 +32,20 @@ combined_args(1, 2, "hello", name="Charlie", age=25)
 # Output:
 # Positional arguments (args): (1, 2, 'hello')
 # Keyword arguments (kwargs): {'name': 'Charlie', 'age': 25}
+
+# Unpacking Arguments When Calling a Function
+
+def greet(name, greeting):
+    print(f"{greeting}, {name}!")
+
+info = ("David", "Hi")
+greet(*info)  # Unpacks the tuple into positional arguments
+# Output: Hi, David!
+
+
+def describe(name, age):
+    print(f"Name: {name}, Age: {age}")
+
+person_data = {"name": "Eve", "age": 28}
+describe(**person_data)  # Unpacks the dictionary into keyword arguments
+# Output: Name: Eve, Age: 28
